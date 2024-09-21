@@ -1,0 +1,145 @@
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card card-body d-flex flex-column align-items-center" id="profile-wrapper">
+            <div class="border-0 border-bottom border-gray border-3">
+              <img src="{% static 'images/profile.jpg' %}" alt="" id="profile-pic" />
+            </div>
+            <hr />
+            <h4>Hi! I'm Mohammadreza</h4>
+            <p>I love programmign and python is my favorite programming language. Now I am learning Django framework and this is just an exercise.</p>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="card card-body">
+            <h4>My first django project</h4>
+            <hr />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam beatae nulla excepturi. Nihil molestias libero temporibus in dolorem itaque autem sapiente ratione repudiandae illo mollitia sequi, quae fuga nemo.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa iusto aperiam asperiores distinctio libero exercitationem consectetur laudantium, vel perspiciatis doloribus aliquam ipsum at eius neque. Accusantium placeat nemo quam maxime!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa iusto aperiam asperiores distinctio libero exercitationem consectetur laudantium, vel perspiciatis doloribus aliquam ipsum at eius neque. Accusantium placeat nemo quam maxime!</p>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card card-body">
+            <h4>What I know</h4>
+            <hr />
+            <p>
+              I am a front-end programmer and since I knew Python well, I decided to learn the Django framework to become a full-stack programmer.
+
+              <br>
+              <br>
+              Apart from these, I am familiar with other programming languages such as C++, C#, Java, and Kotlin.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-body">
+            <h4>Skills</h4>
+            <hr />
+            <div class="row">
+              <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                  <a class="list-group-item list-group-item-action active" id="list-html-list" data-bs-toggle="list" href="#list-html" role="tab" aria-controls="list-html">HTML</a>
+                  <a class="list-group-item list-group-item-action" id="list-css-list" data-bs-toggle="list" href="#list-css" role="tab" aria-controls="list-css">CSS</a>
+                  <a class="list-group-item list-group-item-action" id="list-js-list" data-bs-toggle="list" href="#list-js" role="tab" aria-controls="list-js">JavaScript</a>
+                  <a class="list-group-item list-group-item-action" id="list-ts-list" data-bs-toggle="list" href="#list-ts" role="tab" aria-controls="list-ts">TypeScript</a>
+                  <a class="list-group-item list-group-item-action" id="list-react-list" data-bs-toggle="list" href="#list-react" role="tab" aria-controls="list-react">React Js/Ts</a>
+                  <a class="list-group-item list-group-item-action" id="list-python-list" data-bs-toggle="list" href="#list-python" role="tab" aria-controls="list-python">Python</a>
+                  <a class="list-group-item list-group-item-action" id="list-django-list" data-bs-toggle="list" href="#list-django" role="tab" aria-controls="list-django">Django</a>
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="list-html" role="tabpanel" aria-labelledby="list-html-list">
+                    <h4>HTML</h4>
+                    <hr />
+                    <div class="progress h-75" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar fs-3" style="width: 90%;">90%</div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="list-css" role="tabpanel" aria-labelledby="list-css-list">
+                    <h4>CSS</h4>
+                    <hr />
+                    <div class="progress h-75" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar fs-3" style="width: 75%;">75%</div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="list-js" role="tabpanel" aria-labelledby="list-js-list">
+                    <h4>JavaScript</h4>
+                    <hr />
+                    <div class="progress h-75" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar fs-3" style="width: 80%;">80%</div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="list-ts" role="tabpanel" aria-labelledby="list-ts-list">
+                    <h4>TypeScript</h4>
+                    <hr />
+                    <div class="progress h-75" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar fs-3" style="width: 40%;">40%</div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="list-react" role="tabpanel" aria-labelledby="list-react-list">
+                    <h4>React Js/Ts</h4>
+                    <hr />
+                    <div class="progress h-75" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar fs-3" style="width: 60%;">60%</div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="list-python" role="tabpanel" aria-labelledby="list-python-list">
+                    <h4>Python</h4>
+                    <hr />
+                    <div class="progress h-75" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar fs-3" style="width: 80%;">80%</div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="list-django" role="tabpanel" aria-labelledby="list-django-list">
+                    <h4>Django</h4>
+                    <hr />
+                    <div class="progress h-75" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar fs-3" style="width: 35%;">35%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card card-body">
+            <h4>subject</h4>
+            <hr>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, officiis ratione! At voluptatibus accusamus reiciendis, cupiditate hic deserunt velit dolorem temporibus iste, expedita, architecto eum voluptate cum perspiciatis quam magnam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quas sequi maiores eligendi vel alias quidem cumque provident. Quisquam dicta libero repellat tenetur odit, inventore tempora minus cupiditate facere necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quis blanditiis fuga enim! Dolorem possimus, hic excepturi quam adipisci beatae. Nisi perspiciatis culpa ipsum placeat maxime reprehenderit necessitatibus esse eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, blanditiis. Et molestiae delectus explicabo quaerat eius. Pariatur voluptate maxime sint amet ea. Hic, blanditiis placeat? Reprehenderit adipisci quis eius aliquid?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% comment %} <h3>Hello world</h3>
+    <img src="{% static '/images/profile.jpg' %}" /> {% endcomment %}
+  </body>
+</html>
